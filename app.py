@@ -29,7 +29,7 @@ user_vector_scaled = scaler.transform([user_vector])
 
 if st.button("Predict Price"):
     prediction = model.predict(user_vector_scaled)
-    st.success(f"Estimated House Price: ₹ {prediction[0]:,.2f}")
+    st.success(f"Estimated House Price: $ {prediction[0]:,.2f}")
 
 # Optional: Visualize
 st.markdown("---")
